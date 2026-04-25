@@ -9,7 +9,7 @@ source.include_exts = py,ttf,mp3
 
 version = 1.0
 
-requirements = python3,kivy
+requirements = python3==3.10.9,kivy==2.3.0
 
 orientation = portrait
 
