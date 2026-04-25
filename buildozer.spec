@@ -9,7 +9,7 @@ source.include_exts = py,ttf,mp3,json
 
 version = 1.0
 
-requirements = python3, kivy==2.3.0, requests, certifi
+requirements = python3, kivy==2.3.0, requests, certifi, openssl
 
 orientation = portrait
 
