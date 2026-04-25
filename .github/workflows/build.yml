@@ -50,11 +50,13 @@ jobs:
           wget https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip -O tools.zip
           unzip tools.zip
 
-          mv cmdline-tools latest
+           mv cmdline-tools latest
+          mkdir -p $SDK_DIR/tools/bin
+          ln -s $SDK_DIR/cmdline-tools/latest/bin/sdkmanager $SDK_DIR/tools/bin/sdkmanager
 
-          yes | latest/bin/sdkmanager --licenses
+          yes | $SDK_DIR/cmdline-tools/latest/bin/sdkmanager --licenses
 
-          latest/bin/sdkmanager \
+          $SDK_DIR/cmdline-tools/latest/bin/sdkmanager \
           "platform-tools" \
           "platforms;android-31" \
           "build-tools;31.0.0"
