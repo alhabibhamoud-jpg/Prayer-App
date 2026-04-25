@@ -216,3 +216,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# ---------- Buildozer ----------
+.buildozer/
+
+# مجلدات البناء
+bin/
+build/
+dist/
+
+# ملفات apk الناتجة
+*.apk
+
